@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Practica4</string>
+    <string name="diarium">Diarium</string>
+    <string name="atras">Atrás</string>
+    <string name="ayuda">Ayuda</string>
+    <string name="calendario">Calendario</string>
+    <string name="favoritos">Favoritos</string>
+    <string name="ver_entradas">Ver Entradas</string>
+    <string name="registrar_entrada">Registrar Entrada</string>
+    <string name="mensaje">Con Diarium puedes registrar tus recuerdos, gestionar tus entradas y consultar tus notas importantes.</string>
+    <string name="logo_de_la_app">Logo de la App</string>
+    <string name="titulo">Título</string>
+    <string name="contenido">Contenido</string>
+    <string name="fecha_de_la_entrada">Fecha de la entrada:</string>
+    <string name="añadir_imagen">Añadir Imagen</string>
+    <string name="grabar_audio">Grabar Audio</string>
+    <string name="guardar">Guardar</string>
+    <string name="establecer_recordatorio">Establecer recordatorio</string>
+    <string name="marcar_como_favorito">Marcar como favorito</string>
+    <string name="icono_de_ayuda">Icono de ayuda</string>
+    <string name="como_usar_la_app">Cómo usar la aplicación</string>
+</resources>

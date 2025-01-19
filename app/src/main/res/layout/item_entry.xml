@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/buttonContainer"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingBottom="4dp" />
+
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/viewImageButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_image"
+            android:background="?attr/selectableItemBackground"
+            app:tint="@color/purple_1"
+            android:layout_marginStart="8dp"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/playAudioButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_audio"
+            android:background="?attr/selectableItemBackground"
+            app:tint="@color/purple_1"
+            android:layout_marginStart="8dp"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/deleteEntryButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_delete"
+            android:background="?attr/selectableItemBackground"
+            app:tint="@color/purple_1"
+            android:layout_marginStart="8dp"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/contentTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleTextView"
+        android:textSize="16sp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:paddingBottom="4dp" />
+</RelativeLayout>

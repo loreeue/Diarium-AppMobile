@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme.Toolbar" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:titleTextColor">@android:color/white</item>
+        <item name="android:background">"@color/purple_2"</item>
+    </style>
+</resources>

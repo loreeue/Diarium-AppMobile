@@ -1,0 +1,130 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/titleEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/titulo"
+            android:layout_margin="16dp"
+            android:textSize="14sp"
+            tools:ignore="Autofill,TextFields" />
+
+        <EditText
+            android:id="@+id/contentEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/contenido"
+            android:inputType="textMultiLine"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="16dp"
+            android:textSize="14sp"
+            tools:ignore="Autofill" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fecha_de_la_entrada"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="8dp"/>
+
+        <DatePicker
+            android:id="@+id/entryDatePicker"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"
+            android:layout_marginHorizontal="16dp" />
+
+        <Switch
+            android:id="@+id/reminderSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/establecer_recordatorio"
+            android:fontFamily="@font/architects_daughter"
+            android:layout_margin="16dp"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <DatePicker
+            android:id="@+id/reminderDatePicker"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"
+            android:visibility="gone"
+            android:layout_marginHorizontal="16dp" />
+
+        <Switch
+            android:id="@+id/favoriteSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/marcar_como_favorito"
+            android:fontFamily="@font/architects_daughter"
+            android:layout_margin="16dp"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottieAnimation"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:lottie_rawRes="@raw/animation"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <Button
+                android:id="@+id/addImageButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/añadir_imagen"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/purple_1"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/recordAudioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/grabar_audio"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/purple_1"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/guardar"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/purple_1"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/backButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/atras"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/purple_1"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

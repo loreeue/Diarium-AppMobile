@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:padding="0dp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/purple_2"
+        android:theme="@style/AppTheme.Toolbar"
+        app:title="Diarium"
+        app:titleTextColor="@android:color/white"
+        app:titleTextAppearance="@font/architects_daughter">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/toolbarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/diarium"
+                android:fontFamily="@font/architects_daughter"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:gravity="center_vertical"
+                android:layout_alignParentStart="true"
+                android:paddingStart="16dp"
+                tools:ignore="RelativeOverlap,RtlSymmetry" />
+
+            <ImageView
+                android:id="@+id/logoImageView"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/logo_2"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"
+                android:scaleType="fitCenter"
+                tools:ignore="ContentDescription" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/mainButtonsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginTop="0dp">
+
+            <ImageView
+                android:id="@+id/appLogo"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/logo"
+                android:contentDescription="@string/logo_de_la_app"
+                android:layout_marginTop="0dp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/appDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:fontFamily="@font/architects_daughter"
+                android:text="@string/mensaje"
+                android:textSize="12sp"
+                android:textColor="@android:color/black" />
+
+            <Button
+                android:id="@+id/registerEntryButton"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/registrar_entrada"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/purple_1"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/architects_daughter" />
+
+            <Button
+                android:id="@+id/viewEntriesButton"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/ver_entradas"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/purple_1"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/architects_daughter" />
+
+            <Button
+                android:id="@+id/favoritesButton"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/favoritos"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/purple_1"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/architects_daughter" />
+
+            <Button
+                android:id="@+id/calendarButton"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/calendario"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/purple_1"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/architects_daughter" />
+
+            <Button
+                android:id="@+id/helpButton"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/ayuda"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/purple_1"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/architects_daughter" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
